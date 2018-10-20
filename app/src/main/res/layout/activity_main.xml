@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center_horizontal|center_vertical"
+       android:paddingBottom="50dp"
+       android:orientation="vertical">
+
+       <Button
+           android:id="@+id/btnPoetry"
+           style="@android:style/Widget.Button.Inset"
+           android:layout_width="260dp"
+           android:layout_height="80dp"
+           android:text="اُردو شاعری"
+           android:onClick="btnUrduPoetry"
+           android:textColor="#1f9113"
+           android:fontFamily=""
+           android:textSize="40sp"
+           android:textStyle="bold" />
+
+       <Button
+           android:id="@+id/btnShareWithFriends"
+           android:onClick="shareWithFriends"
+           style="@android:style/Widget.Button.Inset"
+           android:layout_width="260dp"
+           android:layout_height="80dp"
+           android:text="دوستوں کو بتائیں"
+           android:textColor="#1f9113"
+           android:textSize="35sp"
+           android:textStyle="bold" />
+
+
+
+       <Button
+           android:id="@+id/btnRate"
+           style="@android:style/Widget.Button.Inset"
+           android:layout_width="260dp"
+           android:layout_height="80dp"
+           android:layout_below="@+id/btnMoreApp"
+           android:text="Rate This App"
+           android:onClick="rateThisApp"
+           android:fontFamily="cursive"
+           android:textColor="#1f9113"
+           android:textSize="30sp"
+           android:textStyle="bold" />
+
+       <Button
+       android:id="@+id/btnMoreApp"
+           android:onClick="moreApps"
+       style="@android:style/Widget.Button.Inset"
+       android:layout_width="260dp"
+       android:layout_height="80dp"
+       android:text="More Apps"
+       android:textColor="#1f9113"
+           android:fontFamily="cursive"
+       android:textSize="30sp"
+       android:textStyle="bold" />
+   </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2774902255682903/5600653532">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

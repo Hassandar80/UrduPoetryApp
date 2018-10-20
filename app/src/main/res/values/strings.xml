@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Urdu Poetry</string>
+    <string name="admob_app_id">ca-app-pub-2774902255682903~4908063558</string>
+    <string name="interstitial_ad_unit">ca-app-pub-2774902255682903/2793036107</string>
+</resources>
